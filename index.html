@@ -1,0 +1,385 @@
+<html class="hydrated"><head>
+    <meta charset="utf-8"><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/animate.min.css">
+    <script src="static/js/jquery_3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="static/js/bootstrap/popper.min.js"></script>
+    <script src="static/js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+
+
+</style>
+<header>
+<a href="#" class="mjt-logo"> 
+    <img src="static/img/foto.png" style="border-radius:50%;" width="50" height="50">
+    <img src="static/img/logo.png">
+</a>
+<!--ul class="mjt-navigation">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Portafolio</a></li>
+    <li><a href="#">Habilidades</a></li>
+    <li><a href="#">Conoceme</a></li>
+    <li><a href="#">Contacto</a></li>
+</ul-->
+<!--div class="mjt-search">
+    <input type="text" placeholder="Buscar">
+    <ion-icon class="mjt-search-icon" name="search-outline"></ion-icon>
+</div-->
+
+</header>
+
+    
+
+<section class="mjt-banner">
+
+<img src="static/img/foto.png" style="border-radius:50%;">
+
+<div class="mjt-content">
+    <h2>Mario Jasso</h2>
+    <h4>
+        <span>ITC ENGINEER</span>
+        <span>Full stack</span>
+    </h4>
+    <p>I´m Mario, i´m an engineer ICT, in ddition to beign an ICT enginner, i´m sports lover and design. I love both design and programming, i am so versatile that i adapt to any situation.</p>
+    
+    <div class="mjt-buttons-home">
+        <a href="#"><ion-icon class="mjt-icons-home md hydrated" name="person-outline" role="img" aria-label="person outline"></ion-icon>Who i´m</a>
+        <a href="/portfolio.html" class="black"><ion-icon class="mjt-icons-home md hydrated" name="albums-outline" role="img" aria-label="albums outline"></ion-icon>Portfolio</a>
+    </div>
+</div>
+<!--a class="mjt-play"><img src="static/img/play.png">Ver más</a-->
+</section>
+<div class="mjt-trailer">
+<video src="static/img/test.mp4" controls="true"></video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5_FCaj_kMUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+<div class="mjt-close-video">
+    <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
+</div>
+</div>
+<style>
+
+
+</style>
+
+<script>
+$('.mjt-play').on('click', function(){
+    if($('.mjt-trailer').hasClass('active')){
+        $('.mjt-trailer').removeClass('active')
+    }else{
+        $('.mjt-trailer').addClass('active')
+        $('video').trigger('play')
+    }
+})
+$('.mjt-close-video').on('click', function(){        
+    $('.mjt-trailer').removeClass('active')
+    $('video').trigger('pause')
+})
+</script>
+
+
+<section class="section">
+<div class="mjt-title-section">
+    <h1>Skills</h1>
+</div>
+<div class="mjt-card-container">
+    <div class="mjt-card"> 
+        <div class="mjt-lines"></div>
+        <div class="mjt-imgBx">
+            <img src="static/img/section2/design.png">
+        </div>
+        <div class="mjt-content-card">
+            <div class="mjt-deatils-card">
+                <h2>Design</h2>
+                <p>
+                    Design front end, from navigation flow, to code factory.
+                </p>
+                <br>
+                <br>
+                <!--a href="#">Conocer Más</a-->
+            </div>
+        </div>
+    </div>
+    <div class="mjt-card"> 
+        <div class="mjt-lines"></div>
+        <div class="mjt-imgBx">
+            <img src="static/img/section2/dev.png">
+        </div>
+        <div class="mjt-content-card">
+            <div class="mjt-deatils-card">
+                <h2>Development</h2>
+                <p>
+                    System Development optimizing the code as much as possible and mitigating risks when uploading to the server.
+                </p>
+                <br>
+                <br>
+                <!--a href="#">Conocer Más</a-->
+            </div>
+        </div>
+    </div>
+    <div class="mjt-card"> 
+        <div class="mjt-lines"></div>
+        <div class="mjt-imgBx">
+            <img src="static/img/section2/rocket.png">
+        </div>
+        <div class="mjt-content-card">
+            <div class="mjt-deatils-card">
+                <h2>Deploy</h2>
+                <p>
+                    Deploy projects into server where live the app.
+                </p>
+                <br>
+                <!--a href="#">Conocer Más</a-->
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<style>
+
+</style>
+
+<style>
+    .section3{
+        background: #de0611;
+        height: 450px;
+        width: 100%;
+    }
+    .section3 h1{
+        color: #fff;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .mjt-section3-title{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        color: #de0611;
+        margin-top: 2rem;
+    }
+    .mjt-contact-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mjt-contact-card{
+        background: #fff;
+        width: 50%;
+        position: relative;
+    }
+    form{
+        display: block;
+        padding: 20px 30px;
+
+    }
+    form .mjt-form{
+        width: 100%;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        
+
+    }
+    form input{
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        transition: .5s;
+    }
+    form label{
+        text-align: left;
+        color: #808080;
+        position: absolute;
+        left: 35px;
+        margin-top: 2px;
+        transition: .5s;
+    }
+    
+    .mjt-form input:focus,
+    .mjt-form input:valid,
+    .mjt-form textarea:focus,
+    .mjt-form textarea:valid
+     {
+        transition: .5s;
+        width: 80%;
+    }
+    .mjt-form input:focus ~ label,
+    .mjt-form input:valid ~ label,
+    .mjt-form textarea:valid ~ label,
+    .mjt-form textarea:focus ~ label{
+        position: relative;
+        left: 0px;
+        color: #de0611;
+        transition: .5s;
+    }
+    form textarea{
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    form button{
+        display: flex-item;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        color: #fff;
+        border: none;
+        background: #de0611;
+        width: 20%;
+        padding: 10px 10px 30px 10px;
+        font-weight: 700;
+    }
+    form button:hover{
+        background: #8f0209;
+        color: #fff;
+    }
+</style>
+    <!---->
+<section class="section3">
+<div class="mjt-section3-title">
+    <h1>Contact</h1>
+    <div class="mjt-contact-container">
+        <div class="mjt-contact-card">
+            <form method="POST"><!--<input type="hidden" name="csrfmiddlewaretoken" value="JngCOmMIukrAJE4Gf8LIX4c3hvzCWxzxSluBUOvepT0HUJ2ltvgdzePVqbwF3T8G">-->
+                <div class="mjt-form">
+                    <input type="text" class="mjt-name" required="">
+                    <label class="mjt-label-name">Name</label>
+                </div>
+                <div class="mjt-form">
+                    <input type="text" class="mjt-subject" required="">
+                    <label class="mjt-label-subject">Subject</label>
+                </div>
+                <div class="mjt-form">
+                    <input type="email" class="mjt-email" required="">
+                    <label class="mjt-label-email">Email</label>
+                </div>
+                <div class="mjt-form">
+                    <textarea class="mjt-text" required=""></textarea>
+                    <label class="mjt-label-text">Message</label>
+                </div>
+                <br>
+                <button type="submit" class="mjt-send">Send</button>
+            </form>  
+        </div>
+    </div>
+</div>
+
+</section>
+
+    
+
+
+
+<footer class="mjt-footer">
+<small>Develop by Mario Jasso 2023.</small>
+<small> Powered by Django 4.8.0</small>
+</footer>
+<style>
+.mjt-footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: #292929;
+    bottom: 0px;
+    color: #fff;
+}
+</style>
+
+
+
+    
+<div id="mjt-popup">
+<div class="mjt-modal-content">
+    <div class="mjt-main">
+        <div class="mjt-navigation">
+            <span style="--i:0;--x:-1;--y:0;">
+                <ion-icon name="barbell" role="img" class="md hydrated" aria-label="barbell"></ion-icon>
+            </span>
+            <span style="--i:1;--x:1;--y:0;">
+                <ion-icon name="camera" role="img" class="md hydrated" aria-label="camera"></ion-icon>
+            </span>
+            <span style="--i:2;--x:0;--y:-1;">
+                <ion-icon name="cog" role="img" class="md hydrated" aria-label="cog"></ion-icon>
+            </span>
+            <span style="--i:3;--x:0;--y:1;">
+                <ion-icon name="code-working" role="img" class="md hydrated" aria-label="code working"></ion-icon>
+            </span>
+            <span style="--i:4;--x:-1;--y:1;">
+                <ion-icon name="contrast" role="img" class="md hydrated" aria-label="contrast"></ion-icon>
+            </span>
+            <span style="--i:5;--x:-1;--y:-1;">
+                <ion-icon name="extension-puzzle" role="img" class="md hydrated" aria-label="extension puzzle"></ion-icon>
+            </span>
+            <span style="--i:6;--x:1;--y:-1;">
+                <ion-icon name="headset" role="img" class="md hydrated" aria-label="headset"></ion-icon>
+            </span>
+            <span style="--i:7;--x:1;--y:1;">
+                <ion-icon name="qr-code" role="img" class="md hydrated" aria-label="qr code"></ion-icon>
+            </span>
+        </div>
+        <div class="mjt-close">
+            <ion-icon name="close" role="img" class="md hydrated" aria-label="close"></ion-icon>
+        </div>
+    </div>
+</div>
+</div>
+<style>
+#mjt-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #fff;
+    width: 450px;
+    padding: 80px 50px 50px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transition: 0.5s;
+    visibility: hidden;
+}
+#mjt-popup.active{
+    visibility: visible;
+    top: 50%;
+}
+#mjt-popup .mjt-modal-content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+}
+</style>
+
+<script src="static/js/menu.js"></script>
+<script>
+$('.mjt-btn-menu').on('click', function(){
+    if($('#mjt-popup').hasClass('active')){
+        $('#mjt-popup').removeClass('active')
+    }else{
+        $('#mjt-popup').addClass('active')
+    }
+})
+</script>
+
+
+    
+    
+    
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</body></html>
