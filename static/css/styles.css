@@ -427,8 +427,10 @@ header .mjt-logo img{
 }
 
 /*Home section*/
-section{
-    background: #2e2e2f;
+.section-information{
+    /* background: #2e2e2f; */
+    background-image:url('../img/1.jpg');
+    background-size:cover;
 
 }
 .mjt-banner{
@@ -451,7 +453,7 @@ section{
 .mjt-content{
     position: relative;
     z-index: 1;
-    max-width: 550px;
+    /* max-width: 550px; */
 }
 .mjt-banner .mjt-content h4{
     color: rgba(255,255,255,0.5);
