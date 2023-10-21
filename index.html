@@ -10,13 +10,18 @@
     <script src="static/js/jquery_3.6.1/jquery-3.6.1.min.js"></script>
     <script src="static/js/bootstrap/popper.min.js"></script>
     <script src="static/js/bootstrap/bootstrap.min.js"></script>
+    
+    
 </head>
 <body>
+    
+    
+    
 <style>
 
 
 </style>
-<header>
+<header style="background:#000000ab;">
 <a href="#" class="mjt-logo"> 
     <img src="static/img/foto.png" style="border-radius:50%;" width="50" height="50">
     <img src="static/img/logo.png">
@@ -37,23 +42,39 @@
 
     
 
-<section class="mjt-banner">
+<section class="mjt-banner section-information">
 
-<img src="static/img/foto.png" style="border-radius:50%;">
-
-<div class="mjt-content">
-    <h2>Mario Jasso</h2>
-    <h4>
-        <span>ITC ENGINEER</span>
-        <span>Full stack</span>
-    </h4>
-    <p>I´m Mario, i´m an engineer ICT, in ddition to beign an ICT enginner, i´m sports lover and design. I love both design and programming, i am so versatile that i adapt to any situation.</p>
-    
-    <div class="mjt-buttons-home">
-        <a href="#"><ion-icon class="mjt-icons-home md hydrated" name="person-outline" role="img" aria-label="person outline"></ion-icon>Who i´m</a>
-        <a href="/portfolio.html" class="black"><ion-icon class="mjt-icons-home md hydrated" name="albums-outline" role="img" aria-label="albums outline"></ion-icon>Portfolio</a>
+<div class="row">
+    <div class="col-12 col-md-6 d-flex justify-content-center">
+        <img src="static/img/foto.png" style="border-radius:50%;">
+        
     </div>
-</div>
+    <div class="col-12 col-md-6">
+        <div class="mjt-content">
+            <div class="row">
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <h2>Mario Jasso</h2>
+                </div>
+                <h4 class="d-none d-md-flex flex-sm-inline flex-md-column justify-content-center justify-content-md-start">
+                    <span>ITC ENGINEER &nbsp;</span>
+                    <span>Front End Developer</span>
+                </h4>
+                <h4 class="text-center d-block d-md-none">
+                    <span>ITC ENGINEER &nbsp;</span> <br>
+                    <span>Front End Developer</span>
+                </h4>
+                
+                <p class="d-none d-md-block text-left">I´m Mario, i´m an engineer ICT, in addition to beign an ICT enginner, i´m sports lover and design. I love both design and programming, i am so versatile that i adapt to any situation.</p>
+                <p class="d-block d-md-none text-center">I´m Mario, i´m an engineer ICT, in addition to beign an ICT enginner, i´m sports lover and design. I love both design and programming, i am so versatile that i adapt to any situation.</p>
+                
+                <div class="mjt-buttons-home d-flex justify-content-center justify-content-md-start">
+                    <a href="#"><ion-icon class="mjt-icons-home md hydrated" name="person-outline" role="img" aria-label="person outline"></ion-icon>Who i´m</a>
+                    <a href="/portfolio/" class="black"><ion-icon class="mjt-icons-home md hydrated" name="albums-outline" role="img" aria-label="albums outline"></ion-icon>Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
 <!--a class="mjt-play"><img src="static/img/play.png">Ver más</a-->
 </section>
 <div class="mjt-trailer">
@@ -86,7 +107,7 @@ $('.mjt-close-video').on('click', function(){
 
 <section class="section">
 <div class="mjt-title-section">
-    <h1>Skills</h1>
+    <h1 class="text-primary">Skills</h1>
 </div>
 <div class="mjt-card-container">
     <div class="mjt-card"> 
@@ -98,7 +119,8 @@ $('.mjt-close-video').on('click', function(){
             <div class="mjt-deatils-card">
                 <h2>Design</h2>
                 <p>
-                    Design front end, from navigation flow, to code factory.
+                    Design front end, from navigation flow, as well as the design of the code to optimize as much as possible
+
                 </p>
                 <br>
                 <br>
@@ -115,7 +137,7 @@ $('.mjt-close-video').on('click', function(){
             <div class="mjt-deatils-card">
                 <h2>Development</h2>
                 <p>
-                    System Development optimizing the code as much as possible and mitigating risks when uploading to the server.
+                    System Development optimizing the code as much as possible and mitigating risks.
                 </p>
                 <br>
                 <br>
@@ -132,7 +154,7 @@ $('.mjt-close-video').on('click', function(){
             <div class="mjt-deatils-card">
                 <h2>Deploy</h2>
                 <p>
-                    Deploy projects into server where live the app.
+                    Deployment of projects on the server where the application will live, this from the command line with pip or npm.
                 </p>
                 <br>
                 <!--a href="#">Conocer Más</a-->
@@ -145,134 +167,37 @@ $('.mjt-close-video').on('click', function(){
 
 </style>
 
-<style>
-    .section3{
-        background: #de0611;
-        height: 450px;
-        width: 100%;
-    }
-    .section3 h1{
-        color: #fff;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding-top: 1rem;
-    }
 
-    .mjt-section3-title{
-        display: block;
-        justify-content: center;
-        text-align: center;
-        color: #de0611;
-        margin-top: 2rem;
-    }
-    .mjt-contact-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .mjt-contact-card{
-        background: #fff;
-        width: 50%;
-        position: relative;
-    }
-    form{
-        display: block;
-        padding: 20px 30px;
-
-    }
-    form .mjt-form{
-        width: 100%;
-        margin-bottom: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        
-
-    }
-    form input{
-        width: 100%;
-        height: 30px;
-        border-radius: 5px;
-        border: 1px solid #ddd;
-        transition: .5s;
-    }
-    form label{
-        text-align: left;
-        color: #808080;
-        position: absolute;
-        left: 35px;
-        margin-top: 2px;
-        transition: .5s;
-    }
-    
-    .mjt-form input:focus,
-    .mjt-form input:valid,
-    .mjt-form textarea:focus,
-    .mjt-form textarea:valid
-     {
-        transition: .5s;
-        width: 80%;
-    }
-    .mjt-form input:focus ~ label,
-    .mjt-form input:valid ~ label,
-    .mjt-form textarea:valid ~ label,
-    .mjt-form textarea:focus ~ label{
-        position: relative;
-        left: 0px;
-        color: #de0611;
-        transition: .5s;
-    }
-    form textarea{
-        width: 100%;
-        height: 100px;
-        border-radius: 5px;
-        border: 1px solid #ddd;
-    }
-    form button{
-        display: flex-item;
-        justify-content: center;
-        align-items: center;
-        height: 30px;
-        color: #fff;
-        border: none;
-        background: #de0611;
-        width: 20%;
-        padding: 10px 10px 30px 10px;
-        font-weight: 700;
-    }
-    form button:hover{
-        background: #8f0209;
-        color: #fff;
-    }
-</style>
     <!---->
-<section class="section3">
-<div class="mjt-section3-title">
-    <h1>Contact</h1>
-    <div class="mjt-contact-container">
-        <div class="mjt-contact-card">
-            <form method="POST"><!--<input type="hidden" name="csrfmiddlewaretoken" value="JngCOmMIukrAJE4Gf8LIX4c3hvzCWxzxSluBUOvepT0HUJ2ltvgdzePVqbwF3T8G">-->
-                <div class="mjt-form">
-                    <input type="text" class="mjt-name" required="">
-                    <label class="mjt-label-name">Name</label>
+<section class="bg-info">
+<div class="row">
+    <div class="d-flex justify-content-center mt-5">
+        <h2 class="text-white"> Contact</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-2"></div>
+    <div class="col-12 col-md-8">
+        <div class="card mb-5 bg-white p-5 rounded-0 border-0">
+            <form id="main_form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control rounded-0 border-1" id="name" aria-describedby="name" required="">
+                    
                 </div>
-                <div class="mjt-form">
-                    <input type="text" class="mjt-subject" required="">
-                    <label class="mjt-label-subject">Subject</label>
+                <div class="mb-3">
+                    <label for="last_name" class="form-label">Last Name</label>
+                    <input type="text" class="form-control rounded-0 border-1" id="last_name" aria-describedby="last_name" required="">
                 </div>
-                <div class="mjt-form">
-                    <input type="email" class="mjt-email" required="">
-                    <label class="mjt-label-email">Email</label>
+                <div class="mb-3">
+                    <label for="occupation" class="form-label">Occupation</label>
+                    <input type="text" class="form-control rounded-0 border-1" id="occupation" required="">
                 </div>
-                <div class="mjt-form">
-                    <textarea class="mjt-text" required=""></textarea>
-                    <label class="mjt-label-text">Message</label>
-                </div>
-                <br>
-                <button type="submit" class="mjt-send">Send</button>
-            </form>  
+                <button type="submit" class="btn btn-secondary disabled rounded-0">Send</button>
+            </form>
         </div>
     </div>
+    <div class="col-12 col-md-2"></div>
 </div>
 
 </section>
@@ -282,8 +207,10 @@ $('.mjt-close-video').on('click', function(){
 
 
 <footer class="mjt-footer">
-<small>Develop by Mario Jasso 2023.</small>
-<small> Powered by Django 4.8.0</small>
+<small>Develop by Mario Jasso 2023.</small> <br>
+</footer>
+<footer class="mjt-footer-info">
+<small> Powered by django 4.8.0 </small>
 </footer>
 <style>
 .mjt-footer{
@@ -291,7 +218,19 @@ $('.mjt-close-video').on('click', function(){
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 30px;
+    background: #292929;
+    bottom: 0px;
+    color: #fff;
+    border:solid 1px #292929;
+}
+.mjt-footer-info{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border:solid 1px #292929;
     background: #292929;
     bottom: 0px;
     color: #fff;
