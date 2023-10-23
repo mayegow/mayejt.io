@@ -12,17 +12,15 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 30px;
+    height: 40px;
+    width:40px;
     z-index: 100;
-    background: transparent;
+    background: #000000ab;
+    transition:all 1s;
 }
-header .mjt-logo img{
-    max-width: 150px;
-}
+
+
+
 .mjt-navigation {
     display: flex;
     align-items: center;
@@ -72,17 +70,7 @@ header .mjt-logo img{
     color: #fff;
     border-right: 1px solid #fff;
 }
-@media (max-width: 600px){
-    header{
-        padding: 20px 20px;
-    }
-    .mjt-search{
-        width: calc(100% - 20px);
-    }
-    .mjt-banner{
-        padding: 220px 20px;
-    }
-}
+
 /* Menu button */
 
 .mjt-main{
@@ -558,10 +546,7 @@ header .mjt-logo img{
     transition: top 0.5s;
 }
 @media (max-width: 991px){
-    header{
-        padding: 20px 20px;
-        flex-direction: column;
-    }
+    
     .mjt-navigation{
         display: flex;
         margin: 10px 0;

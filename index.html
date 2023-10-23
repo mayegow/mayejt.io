@@ -4,50 +4,209 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="static/css/styles.css">
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/animate.min.css">
-    <link rel="stylesheet" href="static/css/name.css">
-    <script src="static/js/jquery_3.6.1/jquery-3.6.1.min.js"></script>
-    <script src="static/js/bootstrap/popper.min.js"></script>
-    <script src="static/js/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/animate.min.css">
+    <link rel="stylesheet" href="/static/css/name.css">
+    <script src="/static/js/jquery_3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="/static/js/bootstrap/popper.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
     
     
 </head>
-<body>
-    
-    
-    
-<style>
 
+<body>
+    <style>
+        .bubbles-container{
+            position: absolute;
+            width: 100%;
+            height: 76vh;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+        }
+        .mjt-bubbles{
+            position:relative;
+            display:flex;
+            z-index:0;
+        }
+        .mjt-bubbles span{
+            position:relative;
+            width:30px;
+            height:30px;
+            background:#4fc;
+            margin: 0 4px;
+            border-radius:50%;
+            box-shadow: 0 0 0 10px #4fc3dc44, 
+            0 0 50px #4fc3dc,
+            0 0 100px #4fc3dc;
+            animation: animate 15s linear infinite;
+            animation-duration: calc(120s / var(--i));
+        }
+        .mjt-bubbles span:nth-child(even){
+            background : #ff2d75;
+            box-shadow: 0 0 0 10px #ff2d7544, 
+            0 0 50px #ff2d75,
+            0 0 100px #ff2d75;
+            
+        }
+        @keyframes animate{
+            0%{
+                transform : translateY(100vh) scale(0)
+            }
+            100%{
+                transform : translateY(-10vh) scale(1)
+            }
+        }
+        @media (max-width: 768px){
+            .mjt-bubbles span{
+                position:relative;
+                width:20px;
+                height:20px;
+            }
+        }
+    </style>
+            
+            
+            
+<style>
+header.active{
+height:100vh;
+transition: all 1s;
+}
+
+header.active .contextual-menu span:nth-child(1),
+header.active .contextual-menu span:nth-child(2),
+header.active .contextual-menu span:nth-child(3),
+header.active .contextual-menu span:nth-child(4){
+width: 3px;
+}
+
+header.active .contextual-menu span:nth-child(1){
+top:8px;
+left:17px;
+height:20px;
+rotate: 137deg;
+border-radius:12px;
+transition: all 1s;
+width:3px;
+
+}
+header.active .contextual-menu span:nth-child(2){
+left: 17px;
+top: 8px;
+height: 20px;
+border-radius: 12px;
+rotate: 38deg;
+transition: all 1s;
+width:3px;
+
+}
+
+.contextual-menu{
+position:relative;
+width:40px;
+height:40px;
+transition: all 1s;
+
+}
+
+.contextual-menu span{
+display:block;
+background:#fff;
+border-radius:50%;
+height:5px;
+width:5px;
+transition: all 1s;
+}
+
+.contextual-menu span:nth-child(1){
+position:absolute;
+left: 12px;
+top:10px;
+
+}
+.contextual-menu span:nth-child(2){
+position:absolute;
+left: 23px;
+top:10px;
+
+}
+.contextual-menu span:nth-child(3){
+position:absolute;
+left: 12px;
+top: 22px;
+
+}
+.contextual-menu span:nth-child(4){
+position:absolute;
+left: 23px;
+top:22px
+
+}
 
 </style>
-<header style="background:#000000ab;">
-<a href="#" class="mjt-logo"> 
-    <img src="static/img/foto.png" style="border-radius:50%;" width="50" height="50">
-    <img src="static/img/logo.png">
-</a>
-<!--ul class="mjt-navigation">
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Portafolio</a></li>
-    <li><a href="#">Habilidades</a></li>
-    <li><a href="#">Conoceme</a></li>
-    <li><a href="#">Contacto</a></li>
-</ul-->
+<header id="head_menu">
+<div href="#" class="contextual-menu"> 
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    
+</div>
+
 <!--div class="mjt-search">
     <input type="text" placeholder="Buscar">
     <ion-icon class="mjt-search-icon" name="search-outline"></ion-icon>
 </div-->
 
 </header>
+<script>
+$('#head_menu').click(()=>{
+    $("#head_menu").hasClass('active') ? $("#head_menu").removeClass('active') : $("#head_menu").addClass('active')
+})
 
-    
+</script>
 
-<section class="mjt-banner section-information">
+            
 
-<div class="row">
+<style>
+.photo-img{
+    border-radius: 50%;
+    z-index: 1;
+}
+</style>
+<section class="p-5" style="background:#051731;">
+<div class="bubbles-container">
+    <div class="mjt-bubbles">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+    </div>
+</div>
+
+
+<div class="row P-5">
     <div class="col-12 col-md-6 d-flex justify-content-center">
-        <img src="static/img/foto.png" style="border-radius:50%;">
+        <img src="/static/img/foto.png" class="photo-img">
         
     </div>
     <div class="col-12 col-md-6">
@@ -60,29 +219,29 @@
                     
                 </div>
                 <h4 class="d-none d-md-flex flex-sm-inline flex-md-column justify-content-center justify-content-md-start">
-                    <span style="color:#0082d4;">ITC ENGINEER &nbsp;</span>
-                    <span style="color:#dc3545;">Front End Developer</span>
+                    <p style="color:#0082d4;">ITC ENGINEER &nbsp;</p>
+                    <p style="color:#dc3545;">Front End Developer</p>
                 </h4>
                 <h4 class="text-center d-block d-md-none">
-                    <span style="color:#0082d4;">ITC ENGINEER &nbsp;</span> <br>
-                    <span style="color:#dc3545;">Front End Developer</span>
+                    <p style="color:#0082d4;">ITC ENGINEER &nbsp;</p> <br>
+                    <p style="color:#dc3545;">Front End Developer</p>
                 </h4>
                 
-                <p class="d-none d-md-block text-left">I´m Mario, i´m an engineer ICT, in addition to beign an ICT enginner, i´m sports lover and design. I love both design and programming, i am so versatile that i adapt to any situation.</p>
-                <p class="d-block d-md-none text-center">I´m Mario, i´m an engineer ICT, in addition to beign an ICT enginner, i´m sports lover and design. I love both design and programming, i am so versatile that i adapt to any situation.</p>
+                <p class="d-none d-md-block text-left text-white">I´m Mario, i´m an engineer ICT, in addition to beign an ICT enginner, i´m sports lover and design. I love both design and programming, i am so versatile that i adapt to any situation.</p>
+                <p class="d-block d-md-none text-center text-white">I´m Mario, i´m an engineer ICT, in addition to beign an ICT enginner, i´m sports lover and design. I love both design and programming, i am so versatile that i adapt to any situation.</p>
                 
                 <div class="mjt-buttons-home">
-                    <a href="#"><ion-icon class="mjt-icons-home md hydrated" name="person-outline" role="img" aria-label="person outline"></ion-icon>Who i´m</a>
-                    <a href="https://mayegow.github.io/mayejt.io/portfolio.html" class="black"><ion-icon class="mjt-icons-home md hydrated" name="albums-outline" role="img" aria-label="albums outline"></ion-icon>Portfolio</a>
+                    <a href="#" class="btn btn-danger rounded-0"><ion-icon class="mjt-icons-home md hydrated" name="person-outline" role="img" aria-label="person outline"></ion-icon>Who i´m</a>
+                    <a href="/portfolio/" class="btn btn-trasnparent text-white rounded-0"><ion-icon class="mjt-icons-home md hydrated" name="albums-outline" role="img" aria-label="albums outline"></ion-icon>Portfolio</a>
                 </div>
             </div>
         </div>
     </div>
 </div>    
-<!--a class="mjt-play"><img src="static/img/play.png">Ver más</a-->
+<!--a class="mjt-play"><img src="/static/img/play.png">Ver más</a-->
 </section>
 <div class="mjt-trailer">
-<video src="static/img/test.mp4" controls="true"></video>
+<video src="/static/img/test.mp4" controls="true"></video>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5_FCaj_kMUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 <div class="mjt-close-video">
     <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
@@ -117,7 +276,7 @@ $('.mjt-close-video').on('click', function(){
     <div class="mjt-card"> 
         <div class="mjt-lines"></div>
         <div class="mjt-imgBx">
-            <img src="static/img/section2/design.png">
+            <img src="/static/img/section2/design.png">
         </div>
         <div class="mjt-content-card">
             <div class="mjt-deatils-card">
@@ -135,7 +294,7 @@ $('.mjt-close-video').on('click', function(){
     <div class="mjt-card"> 
         <div class="mjt-lines"></div>
         <div class="mjt-imgBx">
-            <img src="static/img/section2/dev.png">
+            <img src="/static/img/section2/dev.png">
         </div>
         <div class="mjt-content-card">
             <div class="mjt-deatils-card">
@@ -152,7 +311,7 @@ $('.mjt-close-video').on('click', function(){
     <div class="mjt-card"> 
         <div class="mjt-lines"></div>
         <div class="mjt-imgBx">
-            <img src="static/img/section2/rocket.png">
+            <img src="/static/img/section2/rocket.png">
         </div>
         <div class="mjt-content-card">
             <div class="mjt-deatils-card">
@@ -247,7 +406,7 @@ $('.mjt-close-video').on('click', function(){
 
 
 
-    
+            
 <div id="mjt-popup">
 <div class="mjt-modal-content">
     <div class="mjt-main">
@@ -311,7 +470,7 @@ $('.mjt-close-video').on('click', function(){
 }
 </style>
 
-<script src="static/js/menu.js"></script>
+<script src="/static/js/menu.js"></script>
 <script>
 $('.mjt-btn-menu').on('click', function(){
     if($('#mjt-popup').hasClass('active')){
@@ -323,7 +482,8 @@ $('.mjt-btn-menu').on('click', function(){
 </script>
 
 
-    
+            
+
     
     
     <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
