@@ -195,25 +195,25 @@
     <div class="col-12 col-md-2"></div>
     <div class="col-12 col-md-8">
         <div class="card mb-5 bg-white p-5 rounded-0 border-0">
-            <form id="main_form">
+            <form id="main_form" action="https://formsubmit.co/mario.jasso.t@gmail.com" method="POST">
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control rounded-0 border-1" id="name" aria-describedby="name" required="">
-                    
+                    <input type="text" class="form-control rounded-0 border-1" id="name" aria-describedby="name" required="" name="name">                    
                 </div>
                 <div class="mb-3">
-                    <label for="last_name" class="form-label">Email</label>
-                    <input type="email" class="form-control rounded-0 border-1" id="last_name" aria-describedby="last_name" required="">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control rounded-0 border-1" id="email" aria-describedby="email" required="" name="email">
                 </div>
                 <div class="mb-3">
                     <label for="subject" class="form-label">Subject</label>
-                    <input type="text" class="form-control rounded-0 border-1" id="subject" required="">
+                    <input type="text" class="form-control rounded-0 border-1" id="subject" required="" name="subject">
                 </div>
                 <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control rounded-0" id="message" rows="3" required=""></textarea>
+                    <label for="comments" class="form-label">Message</label>
+                    <textarea class="form-control rounded-0" id="comments" rows="3" required="" name="comments"></textarea>
                   </div>
-                <button type="submit" class="btn btn-secondary disabled rounded-0">Send</button>
+                <input type="submit" class="btn btn-primary rounded-0" value="Send" />
+                <input type="hidden" name="_next" value="https://mayegow.github.io/mayejt.io/" />
             </form>
         </div>
     </div>
