@@ -1,96 +1,102 @@
-<html class="hydrated"><head>
-    <meta charset="utf-8"><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="static/css/styles.css">
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/animate.min.css">
-    <link rel="stylesheet" href="static/css/name.css">
-    <script src="static/js/jquery_3.6.1/jquery-3.6.1.min.js"></script>
-    <script src="static/js/bootstrap/popper.min.js"></script>
-    <script src="static/js/bootstrap/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Jasso</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/axios.js"></script>
+    <script src="./scripts/emailjs.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>
-<header id="head_menu">
-<div href="#" class="contextual-menu"> 
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
+<body onload="loadData()">
+<!-- <body > -->
+    <header>
+        <a href="" class="logo">Mario Jasso Tinoco</a>
+        <div class="menuToggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </div>
+    </header>
+    <ul class="navigation">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#post" onclick="toggleMenu()">Post</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
 
+    </ul>
 
-
-</header>
-
-
-    
-
-
-<section class="p-5" style="background:#051731;">
-<div class="bubbles-container">
-    <div class="mjt-bubbles">
-        <span style="--i:11;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:24;"></span>
-        <span style="--i:10;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:23;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:20;"></span>
-        <span style="--i:22;"></span>
-        <span style="--i:25;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:21;"></span>
-        <span style="--i:15;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:26;"></span>
-        <span style="--i:17;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:28;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:24;"></span>
-        <span style="--i:10;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:23;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:20;"></span>
-        <span style="--i:22;"></span>
-        <span style="--i:25;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:21;"></span>
-        <span style="--i:17;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:28;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:24;"></span>
-        <span style="--i:10;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:23;"></span>
-        <span style="--i:20;"></span>
-        <span style="--i:22;"></span>
-        <span style="--i:25;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:21;"></span>
-        <span style="--i:17;"></span>
-    </div>
-</div>
-
-
-<div class="row P-5">
-    <div class="col-12 col-md-6 d-flex justify-content-center">
-        <img src="static/img/foto.png" class="photo-img">
-        
-    </div>
-    <div class="col-12 col-md-6">
-        <div class="mjt-content">
+    <!--banner-->
+    <section class="banner" id="home">
+        <img src="./images/bg-neg.png" class="cover" alt="bg-neg">
+        <div class="contentBx">
+            <h2>Mario Jasso</h2>
+            <h4>Un símple sitio web</h4>
+            <a href="#about" class="btn"> Acerca de mí</a>
+        </div>
+    </section>
+    <!--Abour-->
+    <section class="about" id="about">
+        <div class="title">
+            <h2>Acerca de mí</h2>
+        </div>
+        <div class="contentBx">
+            <div class="content">
+                <p>Hola, me presento, yo soy Mario. 
+                    <br/>
+                    <br/>
+                    Me gusta mucho el desarrollo web, me gusta aprender cosas nuevas, así como enfrentarme a nuevos retos, soy amante del conocimiento, y mi forma de pensar y lo que he aprendido con él paso de la vida y mi carrera, es que siempre debemos confiar en los nuevo talentos, y tambien confiar en las personas que tienen ganas de salir adelante y crecer, así como aprender de las personas que vienen detrás de nosotros.
+                    <br/>
+                    <br/>
+                    Quiero seguir creciendo y estoy en proceso de obtener mi primer scrum fundamentals para la dirección agil de equipos de trabajo en el ambito de la tecnología. Posteriormente, me prepararé para obtener el master. Además de seguir aprendiendo cosas nuevas, y de adaptarme a los cambios de manera rápida y con la experiencia que tengo, se que puedo lograrlo.
+                    <br/>
+                    <br/>
+                    Si necesitas más información sobre mi experiencia laboral, aquí te dejo mi Cv Actualizado, hasta <span id="month"></span>.
+                    <div class="row2">
+                        <a href="./curriculum/CV-MJT.pdf" class="btn" download>Descargar</a>
+                    </div>
+                </p>
+            </div>
+            <div class="content">
+                <div class="imgBx">
+                    <img src="./images/img1.jpEg" class="imgAbout" alt="img1">
+                </div>
+            </div>
+            <div class="content-music" id="music">
+                <div>
+                    <h2>Te dejo una de las listas de música más utilizadas por mí.</h2>
+                    <br>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/57tOC1iCz5yjNUJpxZjUER?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="icon-content" id="icon-content">
+            <ul class="sci" id="sci">
+                <li style="--clr: #333333;"><a href="https://github.com/mayegow?tab=repositories" target="_blank" id="icon-git"><i class="fa-brands fa-github"></i></a></li>
+                <li style="--clr: #0062ff;"><a href="#contact" id="icon-email"><i class="fa-regular fa-envelope"></i></a></li>
+                <li style="--clr: #00a783;"><a href="https://wa.me/525527984005?text=Hola%20Mario,%20me%20interesan%20tus%20servicios" target="_blank" id="icon-whats"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Latest Blog Post-->
+    <section class="post" id="post">
+        <div class="title">
+            <h2>Post</h2>
+            <p>Te dejo una pequeña muestra de mis trabajos más recientes en mi repositorio de github.</p>
+        </div>
+        <div class="contentBx" id="contentBx">
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2>Quieres saber más?</h2>
+            <p>Vamos! Ponte en contacto conmigo.</p>
+        </div>
+        <form class="contactForm" id="contactForm">
             <div class="row">
+<<<<<<< HEAD
                 <div class="" style="height:100px;">
                     <div class="glitch-wrapper" style="background:transparent;">
                         <div class="glitch" data-text="Mario Jasso">Mario Jasso</div>
@@ -113,77 +119,38 @@
                     <a href="#" class="btn btn-danger rounded-0"><ion-icon class="mjt-icons-home md hydrated" name="person-outline" role="img" aria-label="person outline"></ion-icon>Who i´m</a>
                     <a href="https://github.com/mayegow?tab=repositories" class="btn btn-trasnparent text-white rounded-0" target="_blank"><ion-icon class="mjt-icons-home md hydrated" name="albums-outline" role="img" aria-label="albums outline"></ion-icon>Portfolio</a>
                 </div>
+=======
+                <input type="text" name="name" aria-describedby="name" placeholder="First Name" required>
+                <input type="text" name="last_name" aria-describedby="last_name" placeholder="Last Name" required>
+>>>>>>> 1efe99f (my new page)
             </div>
-        </div>
-    </div>
-</div>    
-
-</section>
-
-
-
-
-<section class="section" style="position:relative;">
-<div class="mjt-title-section">
-    <h1 class="text-danger" style="z-index:1;">Skills</h1>
-</div>
-<div class="mjt-card-container">
-    <div class="mjt-card"> 
-        <div class="mjt-lines"></div>
-        <div class="mjt-imgBx">
-            <img src="static/img/section2/design.png">
-        </div>
-        <div class="mjt-content-card">
-            <div class="mjt-deatils-card">
-                <h2>Design</h2>
-                <p>
-                    Design front end, from navigation flow, as well as the design of the code to optimize as much as possible
-
-                </p>
-                <br>
-                <br>
-                
+            <div class="row">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="mobile" placeholder="Mobile no." required>
             </div>
-        </div>
-    </div>
-    <div class="mjt-card"> 
-        <div class="mjt-lines"></div>
-        <div class="mjt-imgBx">
-            <img src="static/img/section2/dev.png">
-        </div>
-        <div class="mjt-content-card">
-            <div class="mjt-deatils-card">
-                <h2>Development</h2>
-                <p>
-                    System Development optimizing the code as much as possible and mitigating risks.
-                </p>
-                <br>
-                <br>
-                
+            <div class="row2">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" ></textarea>
             </div>
-        </div>
-    </div>
-    <div class="mjt-card"> 
-        <div class="mjt-lines"></div>
-        <div class="mjt-imgBx">
-            <img src="static/img/section2/rocket.png">
-        </div>
-        <div class="mjt-content-card">
-            <div class="mjt-deatils-card">
-                <h2>Deploy</h2>
-                <p>
-                    Deployment of projects on the server where the application will live, this from the command line with pip or npm.
-                </p>
-                <br>
-                
+            <div class="row2">
+                <input type="submit" value="enviar" class="btn" >
+                <!-- <button onclick="sendEmail()" class="btn">Enviar</button> -->
             </div>
-        </div>
-    </div>
-</div>
-</section>
+        </form>
+    </section>
+    <footer>
+        <a href="" class="logo">My blog</a>
+        <ul class="footerMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#post">Post</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyrightText">Created by Mario Jasso on Django 2024.</p>
+    </footer>
 
 
 
+<<<<<<< HEAD
     <!---->
 <section class="bg-info">
 <div class="row">
@@ -320,3 +287,11 @@ $('.mjt-btn-menu').on('click', function(){
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
 </body></html>
+=======
+</body>
+<script src="./scripts/scripts.js"></script>
+<script src="./scripts/load.js"></script>
+<script src="./scripts/icons.js"></script>
+
+</html>
+>>>>>>> 1efe99f (my new page)

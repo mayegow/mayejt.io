@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.container {
+    position: absolute;
+    top:200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 700px;
+    grid-gap: 30px;
+    overflow:auto;
+}
+
+.container .box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+    background: #fff;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.container .box:nth-child(3n+1){transform: translate(-400px, 0) scale(0)}
+.container .box:nth-child(3n+2){transform: translate(0, 400px) scale(0)}
+.container .box:nth-child(3n+3){transform: translate(400px, 0) scale(0)}
+
+.container .box.active{
+    transform: translate(0, 0) scale(1);
+    transition: all .5s;
+}
+
+@media (max-width: 768px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.works{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    overflow: auto;
+}
